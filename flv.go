@@ -19,6 +19,13 @@ type File struct {
 	firstTimestamp    uint32
 }
 
+type FlvTag struct {
+	Type      uint8
+	Timestamp uint32
+	Size      uint32
+	Bytes     []byte
+}
+
 type TagHeader struct {
 	TagType   byte
 	DataSize  uint32
